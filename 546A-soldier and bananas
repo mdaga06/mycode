@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main(){
+   long long int k,n,w,totalamt=0;
+    cin>>k>>n>>w;
+    for(int i=1;i<=w;i++)
+    totalamt=k*i+totalamt;
+    if((totalamt-n)>0)
+    cout<<(totalamt-n)<<endl;
+    else{
+        cout<<"0"<<endl;
+    }
+    return 0;
+} 
