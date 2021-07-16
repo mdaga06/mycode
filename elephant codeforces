@@ -3,10 +3,17 @@ using namespace std;
 int main(){
     int x,p=0;
     cin>>x;
-    p=x/5;
-    if(x>5){
-        p++;
+    if(x<=5){
+        cout<<"1"<<endl;
     }
+    if(x>5 && x%5==0){
+        p=(x/5);
+        cout<<p<<endl;
+    }
+    if(x>5 && x%5!=0){
+    p=(x/5 +1);
     cout<<p<<endl;
+    }
+    
     return 0;
 }
